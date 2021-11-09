@@ -1,39 +1,35 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
-
-<p>
-  <strong>S0:</strong>
-  <%= @category.s0 %>
-</p>
-
-<p>
-  <strong>S1:</strong>
-  <%= @category.s1 %>
-</p>
-
-<p>
-  <strong>S2:</strong>
-  <%= @category.s2 %>
-</p>
-
-<p>
-  <strong>S3:</strong>
-  <%= @category.s3 %>
-</p>
-
-<p>
-  <strong>S4:</strong>
-  <%= @category.s4 %>
-</p>
-
-<p>
-  <strong>S5:</strong>
+<div class="jumbotron">
+  <h1 class="display-4"><%= @category.name %></h1>
+  <p class="lead"><p>
+    <strong>0/5:</strong>
+   <%= @category.s0 %>
+  </p>
+  <p>
+    <strong>1/5:</strong>
+    <%= @category.s1 %>
+  </p>
+  <p>
+    <strong>2/5:</strong>
+    <%= @category.s2 %>
+  </p>
+  <p>
+    <strong>3/5:</strong>
+    <%= @category.s3 %>
+  </p>
+  <p>
+    <strong>4/5:</strong>
+    <%= @category.s4 %>
+  </p>
+  <p>
+  <strong>5/5:</strong>
   <%= @category.s5 %>
-</p>
+</p></p>
+  <hr class="my-4">
+  <p>
+    <%= link_to 'Edit', edit_category_path(@category), class:"btn btn-dark" %>
+    <%= link_to 'Back', categories_path, class:"btn btn-secondary" %>
+  </p>
+</div>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+
+

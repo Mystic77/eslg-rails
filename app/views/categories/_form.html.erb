@@ -11,42 +11,56 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :s0 %>
-    <%= form.text_field :s0 %>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.label "0/5" %>
+    <%= form.text_area :s0, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :s1 %>
-    <%= form.text_field :s1 %>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.label "1/5" %>
+    <%= form.text_area :s1, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :s2 %>
-    <%= form.text_field :s2 %>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.label "2/5" %>
+    <%= form.text_area :s2, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :s3 %>
-    <%= form.text_field :s3 %>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.label "3/5" %>
+    <%= form.text_area :s3, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :s4 %>
-    <%= form.text_field :s4 %>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.label "4/5" %>
+    <%= form.text_area :s4, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :s5 %>
-    <%= form.text_field :s5 %>
+  <br/>
+
+  <div class="field form-group">
+    <%= form.label "5/5" %>
+    <%= form.text_area :s5, class:"form-control"  %>
   </div>
+
+  <br/>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:'btn btn-success' %>
   </div>
 <% end %>

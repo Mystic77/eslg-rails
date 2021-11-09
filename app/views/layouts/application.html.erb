@@ -18,7 +18,14 @@
   </head>
   <body>
     <%= render 'home/header' %>
-    <div class="container">
+    <div class="container mb-3">
+
+      <br/>
+
+      <% if notice %>
+        <%= render 'layouts/alerts' %>
+      <% end %>
+
       <%= yield %>
     </div>
 
